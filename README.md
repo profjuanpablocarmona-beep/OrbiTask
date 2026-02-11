@@ -18,7 +18,7 @@
 
 ## 📸 Preview
 
-![OrbiTask Preview](preview.png)
+![OrbiTask Preview](https://profjuanpablocarmona-beep.github.io/OrbiTask/)
 > *Interfaz moderna con diseño glassmorphism y animaciones fluidas*
 
 ---
@@ -109,7 +109,7 @@ cd orbitask
 ```
 
 ### Opción 3: GitHub Pages
-Puedes ver la demo en vivo aquí: [OrbiTask Demo](https://tu-usuario.github.io/orbitask)
+Puedes ver la demo en vivo aquí: [OrbiTask Demo](https://profjuanpablocarmona-beep.github.io/OrbiTask/)
 
 ---
 
