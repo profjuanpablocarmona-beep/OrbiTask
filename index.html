@@ -5,55 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OrbiTask - Gestión de Tareas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="background-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-    </div>
 
-    <div class="app-header">
-        <h1>
-            <span class="logo-icon">✓</span>
-            OrbiTask
-        </h1>
-        <p class="subtitle">Organiza tu día, alcanza tus metas</p>
-    </div>
+    <!-- HEADER -->
+<header>
+    <h1 class="logo">🚀 OrbiTask</h1>
+    <p class="subtitle">Organiza tu día, alcanza tus metas</p>
 
-    <div class="container">
+    <!-- Switch día/noche -->
+    <div class="theme-switch-container">
+        <label class="theme-switch">
+            <input type="checkbox" id="themeToggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+</header>
+
+
+    <main class="container">
+
+        <!-- CARD TAREAS -->
         <div class="card card-tasks">
             <div class="card-header">
-                <h2>
-                    <span class="icon">📋</span>
-                    Mis Tareas
-                </h2>
+                <h2>Mis Tareas</h2>
             </div>
-            
+
+            <!-- Formulario de tareas -->
             <div class="input-group">
                 <input type="text" id="tareaInput" placeholder="¿Qué hay que hacer hoy?" autocomplete="off">
-                <input type="date" id="fechaInput" class="date-input">
-                <select id="categoriaInput" class="category-select">
-                    <option value="personal">👤 Personal</option>
-                    <option value="trabajo">💼 Trabajo</option>
-                    <option value="urgente">🔥 Urgente</option>
-                    <option value="ideas">💡 Ideas</option>
+                <input type="date" id="fechaInput">
+                <select id="categoriaInput">
+                    <option value="personal">Personal</option>
+                    <option value="trabajo">Trabajo</option>
+                    <option value="urgente">Urgente</option>
+                    <option value="ideas">Ideas</option>
                 </select>
-                <select id="prioridadInput" class="priority-select">
+                <select id="prioridadInput">
                     <option value="baja">Baja</option>
                     <option value="media">Media</option>
                     <option value="alta">Alta</option>
                 </select>
-                <button id="btnAgregar">
-                    <span class="btn-text">Agregar</span>
-                    <span class="btn-icon">+</span>
-                </button>
+                <button id="btnAgregar">Agregar</button>
             </div>
 
+            <!-- Búsqueda y filtros -->
             <div class="filters-section">
-                <div class="search-box">
-                    <input type="text" id="searchInput" placeholder="🔍 Buscar tareas..." autocomplete="off">
-                </div>
+                <input type="text" id="searchInput" placeholder="Buscar tareas..." autocomplete="off">
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="todas">Todas</button>
                     <button class="filter-btn" data-filter="pendientes">Pendientes</button>
@@ -65,42 +64,39 @@
                 </div>
             </div>
 
+            <!-- Lista de tareas -->
             <div class="tasks-container">
                 <ul id="listaTareas"></ul>
                 <div id="emptyState" class="empty-state">
-                    <div class="empty-icon">📝</div>
                     <p>No hay tareas aún</p>
                     <span>¡Agrega tu primera tarea para comenzar!</span>
                 </div>
             </div>
         </div>
 
+        <!-- CARD ESTADÍSTICAS -->
         <div class="card card-stats">
             <div class="card-header">
-                <h2>
-                    <span class="icon">📊</span>
-                    Progreso
-                </h2>
+                <h2>Progreso</h2>
             </div>
 
-            <div id="estadisticas">
-                <div class="stat-box stat-total">
-                    <div class="stat-icon">📌</div>
-                    <span class="stat-number" id="total">0</span>
+            <!-- Contador -->
+            <div id="estadisticas" class="stats-grid">
+                <div class="stat-box">
                     <label>Total</label>
+                    <span id="total">0</span>
                 </div>
-                <div class="stat-box stat-completada">
-                    <div class="stat-icon">✅</div>
-                    <span class="stat-number" id="completadas">0</span>
+                <div class="stat-box">
                     <label>Completadas</label>
+                    <span id="completadas">0</span>
                 </div>
-                <div class="stat-box stat-pendiente">
-                    <div class="stat-icon">⏳</div>
-                    <span class="stat-number" id="pendientes">0</span>
+                <div class="stat-box">
                     <label>Pendientes</label>
+                    <span id="pendientes">0</span>
                 </div>
             </div>
 
+            <!-- Barra de progreso -->
             <div class="progress-section">
                 <div class="progress-header">
                     <span>Completado</span>
@@ -111,43 +107,21 @@
                 </div>
             </div>
 
+            <!-- Gráfico de barras -->
             <div class="chart-section">
-                <h3>Distribución</h3>
-                <div id="graficoContenedor">
-                    <div class="bar-wrapper">
-                        <div id="barraCompletadas" class="bar"></div>
-                        <label>Listas</label>
-                    </div>
-                    <div class="bar-wrapper">
-                        <div id="barraPendientes" class="bar"></div>
-                        <label>Faltan</label>
-                    </div>
+                <h3>Distribución de tareas</h3>
+                <div class="chart-filters">
+                    <button class="chart-filter active" data-cat="todas">Todas</button>
+                    <button class="chart-filter" data-cat="personal">Personal</button>
+                    <button class="chart-filter" data-cat="trabajo">Trabajo</button>
+                    <button class="chart-filter" data-cat="urgente">Urgente</button>
+                    <button class="chart-filter" data-cat="ideas">Ideas</button>
                 </div>
-            </div>
-
-            <div class="categories-stats">
-                <h3>Por Categoría</h3>
-                <div class="category-list">
-                    <div class="category-stat">
-                        <span class="cat-label">👤 Personal</span>
-                        <span class="cat-count" id="count-personal">0</span>
-                    </div>
-                    <div class="category-stat">
-                        <span class="cat-label">💼 Trabajo</span>
-                        <span class="cat-count" id="count-trabajo">0</span>
-                    </div>
-                    <div class="category-stat">
-                        <span class="cat-label">🔥 Urgente</span>
-                        <span class="cat-count" id="count-urgente">0</span>
-                    </div>
-                    <div class="category-stat">
-                        <span class="cat-label">💡 Ideas</span>
-                        <span class="cat-count" id="count-ideas">0</span>
-                    </div>
-                </div>
+                <canvas id="tareasChart"></canvas>
             </div>
         </div>
-    </div>
+
+    </main>
 
     <script src="script.js"></script>
 </body>
