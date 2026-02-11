@@ -93,6 +93,27 @@
 * 🎪 Formas flotantes animadas
 
 ---
+🆕 Actualización Versión 2.0
+
+En esta versión se incorporaron las siguientes mejoras:
+
+✅ Switch día/noche totalmente funcional con gradientes estilo galaxia.
+
+🎨 Renovación de estética de título, subtítulo, botones y filtros de tareas.
+
+📊 Gráfico de barras dinámico con gradientes y filtrado por categorías.
+
+🔘 Filtros de tareas inteligentes por estado y categoría, manteniendo estética moderna.
+
+📈 Barra de progreso porcentual animada según tareas completadas.
+
+📝 Formulario de tareas más compacto y responsivo.
+
+💾 Empty state visible solo cuando no hay tareas.
+
+📱 Compatibilidad total con dispositivos móviles (responsive).
+
+⚡ Mejoras generales en visibilidad y contraste en modos claro y oscuro
 
 ## 🛠️ Tecnologías Utilizadas
 
