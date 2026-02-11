@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrbiTask - Gestión de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="app-header">
+        <h1>
+            <span class="logo-icon">✓</span>
+            OrbiTask
+        </h1>
+        <p class="subtitle">Organiza tu día, alcanza tus metas</p>
+    </div>
+
+    <div class="container">
+        <div class="card card-tasks">
+            <div class="card-header">
+                <h2>
+                    <span class="icon">📋</span>
+                    Mis Tareas
+                </h2>
+            </div>
+            
+            <div class="input-group">
+                <input type="text" id="tareaInput" placeholder="¿Qué hay que hacer hoy?" autocomplete="off">
+                <input type="date" id="fechaInput" class="date-input">
+                <select id="categoriaInput" class="category-select">
+                    <option value="personal">👤 Personal</option>
+                    <option value="trabajo">💼 Trabajo</option>
+                    <option value="urgente">🔥 Urgente</option>
+                    <option value="ideas">💡 Ideas</option>
+                </select>
+                <select id="prioridadInput" class="priority-select">
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <button id="btnAgregar">
+                    <span class="btn-text">Agregar</span>
+                    <span class="btn-icon">+</span>
+                </button>
+            </div>
+
+            <div class="filters-section">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="🔍 Buscar tareas..." autocomplete="off">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="todas">Todas</button>
+                    <button class="filter-btn" data-filter="pendientes">Pendientes</button>
+                    <button class="filter-btn" data-filter="completadas">Completadas</button>
+                    <button class="filter-btn" data-filter="personal">Personal</button>
+                    <button class="filter-btn" data-filter="trabajo">Trabajo</button>
+                    <button class="filter-btn" data-filter="urgente">Urgente</button>
+                    <button class="filter-btn" data-filter="ideas">Ideas</button>
+                </div>
+            </div>
+
+            <div class="tasks-container">
+                <ul id="listaTareas"></ul>
+                <div id="emptyState" class="empty-state">
+                    <div class="empty-icon">📝</div>
+                    <p>No hay tareas aún</p>
+                    <span>¡Agrega tu primera tarea para comenzar!</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-stats">
+            <div class="card-header">
+                <h2>
+                    <span class="icon">📊</span>
+                    Progreso
+                </h2>
+            </div>
+
+            <div id="estadisticas">
+                <div class="stat-box stat-total">
+                    <div class="stat-icon">📌</div>
+                    <span class="stat-number" id="total">0</span>
+                    <label>Total</label>
+                </div>
+                <div class="stat-box stat-completada">
+                    <div class="stat-icon">✅</div>
+                    <span class="stat-number" id="completadas">0</span>
+                    <label>Completadas</label>
+                </div>
+                <div class="stat-box stat-pendiente">
+                    <div class="stat-icon">⏳</div>
+                    <span class="stat-number" id="pendientes">0</span>
+                    <label>Pendientes</label>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <div class="progress-header">
+                    <span>Completado</span>
+                    <span id="porcentaje">0%</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+
+            <div class="chart-section">
+                <h3>Distribución</h3>
+                <div id="graficoContenedor">
+                    <div class="bar-wrapper">
+                        <div id="barraCompletadas" class="bar"></div>
+                        <label>Listas</label>
+                    </div>
+                    <div class="bar-wrapper">
+                        <div id="barraPendientes" class="bar"></div>
+                        <label>Faltan</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories-stats">
+                <h3>Por Categoría</h3>
+                <div class="category-list">
+                    <div class="category-stat">
+                        <span class="cat-label">👤 Personal</span>
+                        <span class="cat-count" id="count-personal">0</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="cat-label">💼 Trabajo</span>
+                        <span class="cat-count" id="count-trabajo">0</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="cat-label">🔥 Urgente</span>
+                        <span class="cat-count" id="count-urgente">0</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="cat-label">💡 Ideas</span>
+                        <span class="cat-count" id="count-ideas">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
