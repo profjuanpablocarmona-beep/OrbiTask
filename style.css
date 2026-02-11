@@ -348,3 +348,25 @@ body.dark .empty-state {
         right: 15px;
     }
 }
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(102,126,234,0.15), rgba(118,75,162,0.15), rgba(255,110,199,0.15));
+    color: var(--text-color);
+    transition: background var(--transition-speed), color var(--transition-speed), border-top var(--transition-speed);
+}
+
+body.dark .footer {
+    background: linear-gradient(135deg, rgba(15,23,42,0.4), rgba(2,6,23,0.4), rgba(75,0,130,0.4));
+    color: var(--text-color-dark);
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
