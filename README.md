@@ -1,4 +1,4 @@
-# 🚀 OrbiTask - Gestor de Tareas Inteligente
+🚀 OrbiTask - Gestor de Tareas Inteligente
 
 <div align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
@@ -6,8 +6,6 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
   <img src="https://img.shields.io/badge/LocalStorage-FF6B6B?style=for-the-badge&logo=databricks&logoColor=white" />
 </div>
-
-<br>
 
 <div align="center">
   <h3>✨ Organiza tu día, alcanza tus metas ✨</h3>
@@ -18,14 +16,13 @@
 
 ## 🌐 Demo en Vivo
 
-👉 **Probar la aplicación aquí:**
-🔗 [https://profjuanpablocarmona-beep.github.io/OrbiTask/](https://profjuanpablocarmona-beep.github.io/OrbiTask/)
+🔗 [Probar la aplicación aquí](https://profjuanpablocarmona-beep.github.io/OrbiTask/)
 
 ---
 
 ## 📸 Preview
 
-> Agrega una captura real del proyecto en un archivo llamado `preview.png` en el repositorio para que se vea aquí correctamente.
+> Coloca una captura real del proyecto en `preview.png` para que se vea aquí correctamente:
 
 ```markdown
 ![OrbiTask Preview](./preview.png)
@@ -37,50 +34,32 @@
 
 ### 🎯 Gestión Completa de Tareas
 
-* ✅ **Crear, editar y eliminar** tareas con un click
-* 📝 **Edición inline** - Doble click para editar rápidamente
-* ✓ **Marcar como completadas** con animaciones suaves
-* 🎨 **Interfaz intuitiva** con feedback visual inmediato
+* ✅ Crear, editar y eliminar tareas con un click
+* 📝 Edición inline (doble click para editar)
+* ✓ Marcar como completadas con animaciones suaves
+* 🎨 Interfaz intuitiva con feedback visual inmediato
 
 ### 🏷️ Organización Avanzada
 
-* **4 Categorías predefinidas:**
-
-  * 👤 Personal
-  * 💼 Trabajo
-  * 🔥 Urgente
-  * 💡 Ideas
-* **3 Niveles de prioridad:**
-
-  * 🔴 Alta
-  * 🟡 Media
-  * 🟢 Baja
-* 📅 **Fechas límite** con indicadores visuales:
-
-  * ⚠️ Tareas vencidas
-  * 🔔 Tareas de hoy
-  * 📅 Próximas tareas
+* **4 Categorías predefinidas:** 👤 Personal, 💼 Trabajo, 🔥 Urgente, 💡 Ideas
+* **3 Niveles de prioridad:** 🔴 Alta, 🟡 Media, 🟢 Baja
+* 📅 Fechas límite con indicadores visuales: ⚠️ Vencidas, 🔔 Hoy, 📅 Próximas
 
 ### 🔍 Búsqueda y Filtros
 
-* 🔎 **Búsqueda en tiempo real** por texto
-* 🔘 **Filtros inteligentes:**
-
-  * Todas las tareas
-  * Solo pendientes
-  * Solo completadas
-  * Por categoría específica
+* 🔎 Búsqueda en tiempo real
+* 🔘 Filtros inteligentes: Todas, Pendientes, Completadas, Por categoría
 
 ### 📊 Dashboard de Progreso
 
-* 📈 **Estadísticas en tiempo real**
-* 📊 Barra de progreso porcentual
-* 📊 Gráfico de barras animado
-* 🎯 Análisis visual del estado de tus tareas
+* 📈 Estadísticas en tiempo real
+* 📊 Barra de progreso porcentual animada
+* 📊 Gráfico de barras dinámico
+* 🎯 Análisis visual del estado de las tareas
 
 ### 💾 Persistencia de Datos
 
-* 🔒 **LocalStorage**
+* 🔒 LocalStorage
 * 🔄 Guardado automático
 * 💪 Funciona 100% offline
 
@@ -89,31 +68,26 @@
 * 🌈 Gradientes vibrantes
 * ✨ Glassmorphism
 * 🎭 Animaciones fluidas
-* 📱 100% Responsive
+* 📱 100% responsive
 * 🎪 Formas flotantes animadas
 
 ---
-🆕 Actualización Versión 2.0
 
-En esta versión se incorporaron las siguientes mejoras:
+## 🆕 Actualización Versión 2.0
 
-✅ Switch día/noche totalmente funcional con gradientes estilo galaxia.
+En esta versión se incorporaron mejoras importantes:
 
-🎨 Renovación de estética de título, subtítulo, botones y filtros de tareas.
-
-📊 Gráfico de barras dinámico con gradientes y filtrado por categorías.
-
-🔘 Filtros de tareas inteligentes por estado y categoría, manteniendo estética moderna.
-
-📈 Barra de progreso porcentual animada según tareas completadas.
-
-📝 Formulario de tareas más compacto y responsivo.
-
-💾 Empty state visible solo cuando no hay tareas.
-
-📱 Compatibilidad total con dispositivos móviles (responsive).
-
+✅ Switch día/noche totalmente funcional con gradientes estilo galaxia
+🎨 Renovación de estética de título, subtítulo, botones y filtros
+📊 Gráfico de barras dinámico con filtrado por categorías
+🔘 Filtros de tareas inteligentes por estado y categoría
+📈 Barra de progreso animada según tareas completadas
+📝 Formulario de tareas más compacto y responsivo
+💾 Empty state visible solo cuando no hay tareas
+📱 Compatibilidad total con dispositivos móviles
 ⚡ Mejoras generales en visibilidad y contraste en modos claro y oscuro
+
+---
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -137,19 +111,14 @@ cd OrbiTask
 
 Luego abre `index.html` en tu navegador.
 
----
-
 ### Opción 2: Live Server (Recomendado)
 
 Si usas VS Code:
 Click derecho en `index.html` → **Open with Live Server**
 
----
-
 ### Opción 3: GitHub Pages
 
-Puedes ver la demo en vivo aquí:
-🔗 [https://profjuanpablocarmona-beep.github.io/OrbiTask/](https://profjuanpablocarmona-beep.github.io/OrbiTask/)
+🔗 [Demo en vivo](https://profjuanpablocarmona-beep.github.io/OrbiTask/)
 
 ---
 
@@ -188,4 +157,7 @@ OrbiTask/
 
 ## 🌟 Si te gustó el proyecto
 
-Dale una ⭐ al repositorio y compartilo.
+Dale una ⭐ al repositorio y compartilo con amigos.
+
+
+¿Querés que haga esa versión?
