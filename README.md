@@ -1,16 +1,3 @@
-Perfecto 👌
-Te lo dejo exactamente igual, solo corrigiendo:
-
-* ❌ Imagen de preview (no puede ser un link a la web)
-* ❌ Link de clonación genérico
-* ✅ Link correcto a tu demo
-
-Asumo que tu repo es:
-`https://github.com/profjuanpablocarmona-beep/OrbiTask`
-(Si no es exactamente así, decime y lo ajustamos).
-
----
-
 # 🚀 OrbiTask - Gestor de Tareas Inteligente
 
 <div align="center">
