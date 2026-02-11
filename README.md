@@ -231,10 +231,7 @@ Este proyecto está bajo la Licencia MIT - ve el archivo [LICENSE](LICENSE) para
 
 ## 👨‍💻 Autor
 
-**Tu Nombre**
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [Tu Perfil](https://linkedin.com/in/tu-perfil)
-- Portfolio: [tu-portfolio.com](https://tu-portfolio.com)
+Juan Pablo Carmona Quinteros
 
 ---
 
