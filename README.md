@@ -168,13 +168,3 @@ OrbiTask/
 ## 🌟 Si te gustó el proyecto
 
 Dale una ⭐ al repositorio y compartilo.
-
----
-
-Si querés, ahora hacemos algo más pro todavía:
-
-* 🔥 Optimizar el README para que reclutadores lo lean mejor
-* 🎯 Agregar sección “Qué aprendí desarrollando este proyecto” (esto suma muchísimo)
-* 💼 Adaptarlo para que quede más fuerte en tu portfolio dev
-
-Decime y lo llevamos al siguiente nivel.
